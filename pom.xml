@@ -27,6 +27,8 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
+            <sonar.host.url>http://172.16.238.77:9000/</sonar.host.url>
+	   <sonar.login>4ea9f2df381af07164b1c6d514f159ee9adc2c0b</sonar.login>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
