@@ -3,14 +3,14 @@ name: ci
 on:
   push:
     branches:
-      - "*"  # run for branches
+      - "master"  # run for branches
     tags:
-      - "*"  # run for tags
+      - "newcommit"  # run for tags
   pull_request:
     branches:
-      - "*"  # run for branches
+      - "master"  # run for branches
     tags:
-      - "*"  # run for tags
+      - "master pull"  # run for tags
 
 jobs:
   test:
