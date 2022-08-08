@@ -64,6 +64,7 @@ jobs:
           repository: weaveworksdemos/json-server
           tags: latest
           
+          
       # Run simple test against built container
       - name: Test docker image
         env:
