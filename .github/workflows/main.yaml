@@ -67,4 +67,4 @@ jobs:
          dockerfile: docker/orders/Dockerfile.github
        # path: target/
          registry: docker.io
-         image: gunareddy7/order:3
+         image: gunareddy7/order
