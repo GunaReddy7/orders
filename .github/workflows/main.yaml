@@ -64,6 +64,6 @@ jobs:
       - name: Login to JFrog 🐸  
         uses: docker/login-action@v1
         with:
-          registry: <your artifactory>.jfrog.io
+          registry: <172.16.238.163:8082>.jfrog.io
           username: ${{ secrets.JFROG_USER_WRITER }}
           password: ${{ secrets.JFROG_PASSWORD_WRITER }}
