@@ -51,14 +51,14 @@ jobs:
           echo "${{ secrets.DOCKERHUB_PASS }}" | docker login -u "gunareddy7" --password-stdin 
 
 
-      - name: Push to Docker Hub
-        uses: mr-smithers-excellent/docker-build-push@v5
-        if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/master'
-        with:
-         dockerfile: ./docker/orders/Dockerfile
+   #   - name: Push to Docker Hub
+  #    uses: mr-smithers-excellent/docker-build-push@v5
+   #     if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/master'
+  #      with:
+#         dockerfile: ./docker/orders/Dockerfile
        # path: target/
-         registry: docker.io
-         image: gunareddy7/order
+  #       registry: docker.io
+  #       image: gunareddy7/order
          
       - name: jforg login
         uses: jfrog/setup-jfrog-cli@v2
